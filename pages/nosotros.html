@@ -4,43 +4,82 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
     <title>cosmofotografía</title>
 </head>
 <body>
+    <!-- navbar inicia -->
     <header>
-       <div class="logo">cosmo<span>fotografía</span></div>
-       <nav class="barra">     
-            <ul>
-                <li><a href="../index.html">inicio</a></li>
-                <li><a href="nosotros.html">nosotros</a></li>
-                <li><a href="galeria.html">galeria</a></li>
-                <li><a href="clientes.html">clientes</a></li>
-                <li><a href="contacto.html">contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-sm bg-withe">
+            <div class="container-fluid">
+                <div class="navbar-brand">Cosmo<span>Fotografía</span></div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavbar">
+                    <span>
+                        <i class="fa-solid fa-bars"></i>
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse " id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="nosotros.html">nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="galeria.html">galería</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="clientes.html">clientes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
-    <main>
-        <h1 class="opciondos">¿Quiénes somos?</h1>
-        <div>
-            <p class="nos">Somos una empresa familiar con más de 10 años de trayectoria, en los cuales hemos captado para la eternidad por medio de la fotografía y la fimación momentos únicos en la vida de las personas cómo lo son: casamientos, cumpleaños y eventos en general. Nuestro amor por la naturaleza y fotografiar la misma nos ha llevado a ganar importantes premios a nivel nacional e internacional.
-        </div>
+    <!-- navbar finaliza -->
+    <main class="container-fluid">
+        <h1>¿Quiénes somos?</h1>
     </main>
-    <section>
-        <h2>nuestro equipo</h2>
-        <h2 class="equipo">Carolina González</h2>
-        <img src="../images/mujer.jpg" alt="Persona del equipo" class="img">
-        <h2 class="equipo">Ricardo González</h2>
-        <img src="../images/hombre.jpg" alt="Persona del equipo" class="img">
-        <h2 class="equipo">Andrés Rodríguez</h2>
-        <img src="../images/dron.jpg" alt="Persona del equipo" class="img">
+    <!-- section inicia -->
+    <section class="container-fluid">
+        <p class="nos">Somos una empresa familiar con más de 10 años de trayectoria, en los cuales hemos captado
+                para la eternidad por medio de la fotografía y la fimación momentos únicos en la vida de las personas
+                cómo lo son: casamientos, cumpleaños y eventos en general. Nuestro amor por la naturaleza y fotografiar
+                la misma nos ha llevado a ganar importantes premios a nivel nacional e internacional.</p>
+        <h2 class="nequipo">nuestro equipo</h2>
+        <div class="row">
+            <aside class="img-circle col-sm-4 img1">
+                <h2 class="equipo">Carolina González</h2>
+            </aside>
+            <aside class="col-sm-4 img2">
+                <h2 class="equipo">Ricardo González</h2>
+            </aside>
+            <aside class="col-sm-4 img3">
+                <h2 class="equipo">Andrés Rodríguez</h2>
+            </aside>
+        </div>
     </section>
-    <footer>
+    <!-- section finaliza -->
+    <!-- footer inicia -->
+    <footer class="container-fluid foot">
         <p>Todos los derechos son reservados por copyright</p>
         <div class="redes">
             <a href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
         </div>
-    </footer> 
+    </footer>
+    <!-- footer finaliza -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+    </script>
 </body>
 </html>

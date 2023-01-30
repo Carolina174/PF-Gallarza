@@ -4,41 +4,80 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
     <title>cosmofotografía</title>
 </head>
 <body>
+    <!-- navbar inicia -->
     <header>
-       <div class="logo">cosmo<span>fotografía</span></div>
-       <nav class="barra">     
-            <ul>
-                <li><a href="index.html">inicio</a></li>
-                <li><a href="pages/nosotros.html">nosotros</a></li>
-                <li><a href="pages/galeria.html">galeria</a></li>
-                <li><a href="pages/clientes.html">clientes</a></li>
-                <li><a href="pages/contacto.html">contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-sm bg-withe">
+            <div class="container-fluid">
+                <div class="navbar-brand">Cosmo<span>Fotografía</span></div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavbar">
+                    <span>
+                        <i class="fa-solid fa-bars"></i>
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse " id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/nosotros.html">nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/galeria.html">galería</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/clientes.html">clientes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/contacto.html">contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
-    <main>
-        <div class="call">
-            <p>“Fotografiar es colocar la cabeza, el ojo y el corazón en un mismo eje”. Henri Cartier-Bresson</p>
+    <!-- navbar finaliza -->
+    <!-- main inicia -->
+    <main class="container-fluid">
+        <div class="container-fluid">
+            <h1 class="fw-lighter">“Fotografiar es colocar la cabeza, el ojo y el corazón en un mismo eje”</h1>
         </div>
     </main>
-    <h1>Misión</h1>
-    <section class="sec">
-        <p>Somos una empresa dedicada a la fotografía y filmación, contamos con el más alto nivel profesional y material, para satisfacer a nuestros clientes con el servicio que brindamos. </p>
+    <!-- main finaliza -->
+    <!-- section inicia -->
+    <section class="container-fluid">
+        <div class="row">
+            <aside class="col-sm-6 inicio">
+                <h2>Misión</h2>
+                <p>Somos una empresa dedicada a la fotografía y filmación, contamos con el más alto nivel profesional y material, para satisfacer a nuestros clientes con el servicio que brindamos. </p>
+            </aside>
+            <aside class="mision col-sm-6 inicio">
+                <h2>Visión</h2>
+                <p>Ser una empresa competente y de referencia a nivel miundial en lo que a fotografía profesional se refiere.</p>
+            </aside>
+        </div>
     </section>
-    <h2>Visión</h2>
-    <section class="sec">
-        <p>Ser una empresa competente y de referencia a nivel miundial en lo que a fotografía profesional se refiere. </p>
-    </section>
-    <footer>
+    <!-- section finaliza -->
+    <!-- footer inicia -->
+    <footer class="container-fluid foot">
         <p>Todos los derechos son reservados por copyright</p>
         <div class="redes">
             <a href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
         </div>
-    </footer> 
+    </footer>
+    <!-- footer finaliza -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+    </script>
 </body>
 </html>

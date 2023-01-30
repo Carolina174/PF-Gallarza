@@ -1,97 +1,102 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Oswald:wght@300&family=Poppins:wght@300;400&family=Raleway&display=swap');
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-header{
-    height: 80px;
-    width: 100%;
-    background-color:white
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 15px;
-    text-transform: uppercase;
-    padding: 20px;
-}
-.logo{
-    float: left;
-    color: hwb(44 3% 6%);
-    font-size: 25px;
-    }
-    .logo span {
-        color:black;
-       
-    }
-.barra{
-   float: right; 
-}
-.barra ul li{
-    list-style: none;
-    display: inline-block;
-}
-.barra a{
-    text-decoration: none;
-    color: black;
-}
-.barra a:hover{
+.navbar span {
     color: hwb(44 3% 6%);
 }
-main{
-    height: 100vh;
-    width: 100%;
-    background-color: white;
-    background-image: url(../images/portadaOpcion\ 1.jpg);
+.nav-link {
+    text-transform: capitalize;
+}
+main {
+    background-image: url(../images/portada.jpg);
+    height: 300px;
+    background-position: center;
     background-size: cover;
-    }
-.call{
-    color: white;
-    width: 35%;
-    float: left;
-    border: 1px solid white;
-    padding: 20px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    margin: 50px 20px;
-    border-radius: 5px;
-    line-height: 24px;
 }
-
-h1,h2{
-    text-align: center;
-    color: black;
+h1 {
     font-size: 20px;
-    text-transform: uppercase;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 30px;
-    font-weight: lighter;
+    text-align: center;
+    padding: 25px;
+    color: white;
+    animation-name: aparecer;
+    animation-duration: 3s;
 }
-.sec{
-    background-color: rgba(255, 255, 255, 0.952);
-    height: 100px;
-    width: 100%;
-    color: rgb(0, 0, 0);
-    font-size: 15px;
-    line-height: 25px;
-    padding: 10px 60px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
-footer{
+h2 {
+    font-size: 25px;
+    font-weight: normal;
+    padding: 20px 5px 5px 5px;
+    text-align: center;
+}
+p {
+    padding: 5px;
+    text-align: justify;
+}
+.foot {
     text-align: center;
     font-size: 15px;
-    background-color: black;
+    background-color: rgb(14, 13, 29);
     color: white;
-    font-family: 'Oswald', sans-serif;
+    padding: 15px;
+}
+footer p {
+    margin-bottom: 15px;
+    text-align: center;
+}
+footer i {
+    font-size: 18px;
+}
+.inicio {
+    height: auto;
+}
+/* nosotros */
+.nos {
+    color: white;
+    background-color: white;
+    color: black;
+    margin-top: 10px;
     padding: 20px;
 }
-footer p{
-    margin-bottom: 15px;
+aside {
+    height: 250px;
 }
-footer i{
-    font-size: 30px; 
-  
+.img1 {
+    background-color: aliceblue;
+    background-image: url(../images/mujer.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.img2 {
+    background-color: aliceblue;
+    background-image: url(../images/hombre.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.img3 {
+    background-color: aliceblue;
+    background-image: url(../images/dron.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.nequipo {
+    background-color: rgb(14, 13, 29);
+    color: white;
+    text-transform: capitalize;
+    padding-top: 5px;
+}
+.equipo {
+    font-size: 20px;
+    background-color: rgba(9, 4, 41, 0.693);
+    color: white;
+    margin-top: 7px;
+    padding-top: 5px;
 }
 /* contacto */
-.cont{
+/* .cont{
     color: rgb(241, 238, 238);
     width: 40%;
     border: 1px solid hwb(44 3% 6%);
@@ -100,33 +105,4 @@ footer i{
     margin: 20px 20px;
     border-radius: 3px;
     line-height: 30px;
-    margin-left: 50px;
-}
-/* nosotros.html */
-.nos{
-    color: rgb(253, 253, 253);
-    background-color: rgba(30, 29, 29, 0.732);
-    font-size: 15px;
-    line-height: 25px;
-    padding: 20px 60px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-.equipo{
-    text-align: left;
-    text-transform: capitalize;
-}
-.img{
-    background-color: white;
-    width: 100%; 
-}
-/* segundaOpcionDeTitulo */
-.opciondos{
-    text-align: center;
-    color: rgb(255, 255, 255);
-    font-size: 20px;
-    text-transform: uppercase;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 30px;
-    font-weight: lighter;
-}
-
+    margin-left: 50px; */
