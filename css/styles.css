@@ -1,108 +1,163 @@
+@charset "UTF-8";
+/* variables */
+/* mixin */
+/* código index y genérico */
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+
 .navbar span {
-    color: hwb(44 3% 6%);
+  color: rgba(9, 4, 41, 0.693);
 }
+
 .nav-link {
-    text-transform: capitalize;
+  text-transform: capitalize;
 }
+
 main {
-    background-image: url(../images/portada.jpg);
-    height: 300px;
-    background-position: center;
-    background-size: cover;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../images/portada.jpg);
+  height: 300px;
 }
-h1 {
-    font-size: 20px;
-    text-align: center;
-    padding: 25px;
-    color: white;
-    animation-name: aparecer;
-    animation-duration: 3s;
+main h1 {
+  font-size: 20px;
+  text-align: center;
+  padding: 25px;
+  color: white;
+  animation-name: aparecer;
+  animation-duration: 3s;
 }
-@keyframes aparecer {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+
+.secmain {
+  height: auto;
+  min-height: 100vh;
+  padding: 10px;
 }
+
+.sec {
+  min-height: 50vh;
+}
+.sec .inicio {
+  height: auto;
+}
+
 h2 {
-    font-size: 25px;
-    font-weight: normal;
-    padding: 20px 5px 5px 5px;
-    text-align: center;
+  font-size: 25px;
+  font-weight: normal;
+  padding: 20px 5px 5px 5px;
+  text-align: center;
 }
+
 p {
-    padding: 5px;
-    text-align: justify;
+  padding: 5px;
+  text-align: justify;
 }
+
 .foot {
-    text-align: center;
-    font-size: 15px;
-    background-color: rgb(14, 13, 29);
-    color: white;
-    padding: 15px;
+  text-align: center;
+  font-size: 16px;
+  background-color: rgb(14, 13, 29);
+  color: white;
+  padding: 5px;
 }
-footer p {
-    margin-bottom: 15px;
-    text-align: center;
+.foot p {
+  margin-bottom: 5px;
+  text-align: center;
 }
-footer i {
-    font-size: 18px;
+.foot footer i {
+  font-size: 16px;
 }
-.inicio {
-    height: auto;
-}
+
 /* nosotros */
 .nos {
-    color: white;
-    background-color: white;
-    color: black;
-    margin-top: 10px;
-    padding: 20px;
+  color: white;
+  background-color: white;
+  color: black;
+  margin-top: 10px;
+  padding: 20px;
 }
-aside {
-    height: 250px;
-}
-.img1 {
-    background-color: aliceblue;
-    background-image: url(../images/mujer.jpg);
-    background-position: center;
-    background-size: cover;
-}
-.img2 {
-    background-color: aliceblue;
-    background-image: url(../images/hombre.jpg);
-    background-position: center;
-    background-size: cover;
-}
-.img3 {
-    background-color: aliceblue;
-    background-image: url(../images/dron.jpg);
-    background-position: center;
-    background-size: cover;
-}
+
 .nequipo {
-    background-color: rgb(14, 13, 29);
-    color: white;
-    text-transform: capitalize;
-    padding-top: 5px;
+  background-color: rgb(14, 13, 29);
+  color: white;
+  text-transform: capitalize;
+  padding-top: 5px;
 }
+
+aside {
+  height: 250px;
+}
+
+.img1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url(../images/mujer.jpg);
+  background-color: white;
+}
+
+.img2 {
+  background-position: center;
+  background-size: cover;
+  background-image: url(../images/hombre.jpg);
+  background-color: white;
+}
+
+.img3 {
+  background-position: center;
+  background-size: cover;
+  background-image: url(../images/dron.jpg);
+  background-color: white;
+}
+
 .equipo {
-    font-size: 20px;
-    background-color: rgba(9, 4, 41, 0.693);
-    color: white;
-    margin-top: 7px;
-    padding-top: 5px;
+  font-size: 20px;
+  background-color: rgba(9, 4, 41, 0.693);
+  color: white;
+  margin-top: 7px;
+  padding-top: 5px;
 }
-/* contacto */
-/* .cont{
-    color: rgb(241, 238, 238);
-    width: 40%;
-    border: 1px solid hwb(44 3% 6%);
-    padding: 20px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    margin: 20px 20px;
-    border-radius: 3px;
-    line-height: 30px;
-    margin-left: 50px; */
+
+/* Galeria */
+.contenedor {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-column-gap: 5%;
+  grid-row-gap: 30px;
+}
+
+/* clientes */
+.clientes {
+  padding: 10px;
+}
+
+/* animación */
+.aparecer {
+  animation-name: aparecer;
+  animation-duration: 3s;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* mq */
+@media screen and (min-width: 600px) {
+  .flex-container {
+    justify-content: flex-end;
+  }
+}
+@media screen and (min-width: 1023px) {
+  .contenedor {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2%;
+    grid-row-gap: 3%;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
